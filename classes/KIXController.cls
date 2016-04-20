@@ -4,6 +4,7 @@ public class KIXController
     private final String space = 'space';
     
     public String postCodeString {get;set;}
+    
     public String[] getPostCodeItems() 
     {
         String[] items = new String[]{};
@@ -20,7 +21,7 @@ public class KIXController
     }
 
     private Map<String,String[]> barMap;
-	private Map<String,String[]> getBarMap()
+    private Map<String,String[]> getBarMap()
     {
         if(barMap == null)
         {
@@ -43,7 +44,7 @@ public class KIXController
     {
         if(topBitsMap==null)
         {
-			barMap = getBarMap();
+	    barMap = getBarMap();
             topBitsMap = new Map<String,String[]>{
                 '0'=>barMap.get('0011'),
                 '1'=>barMap.get('0011'),
@@ -91,7 +92,7 @@ public class KIXController
     {
         if(bottomBitsMap==null)
         {
-			barMap = getBarMap();
+	    barMap = getBarMap();
             bottomBitsMap = new Map<String,String[]>{
                 '0'=>barMap.get('0011'),
                 '1'=>barMap.get('0101'),
