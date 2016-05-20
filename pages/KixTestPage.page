@@ -14,7 +14,7 @@
 			.solid {
 				BORDER-LEFT: black 0.63mm solid; HEIGHT: 100%; float: left;
 			}
-			.spacer {
+			.space {
 				BORDER-LEFT: white 0.63mm solid; HEIGHT: 100%; float: left;
 			}
         </style>
